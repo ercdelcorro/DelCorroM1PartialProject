@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Zl3Oxmdhoh0=",
+  "dgSpecHash": "Jr6/RHkW5Ps=",
   "success": true,
-  "projectFilePath": "C:\\Users\\BB\\source\\repos\\ClothingStoreAPI\\ClothingStoreAPI\\ClothingStoreAPI.csproj",
+  "projectFilePath": "C:\\Users\\BB\\Desktop\\edu\\DELCORRO-M1-PARTIAL-PROJ\\backend\\ClothingStoreAPI\\ClothingStoreAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\BB\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\BB\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
