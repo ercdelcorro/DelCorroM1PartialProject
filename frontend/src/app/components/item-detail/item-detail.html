@@ -1,0 +1,66 @@
+<div class="detail-page">
+
+  <nav class="navbar">
+
+    <a routerLink="/" class="logo">
+      CLOSET
+    </a>
+
+    <div class="nav-links">
+      <a routerLink="/">Home</a>
+      <a routerLink="/shop">Shop</a>
+    </div>
+
+  </nav>
+
+  <main class="detail-content">
+
+    <a routerLink="/shop" class="back-link">
+      ← Back to collection
+    </a>
+
+    <p *ngIf="errorMessage">
+      {{ errorMessage }}
+    </p>
+
+    <div class="detail-card" *ngIf="item">
+
+      <div class="detail-image">
+        {{ item.name.charAt(0) }}
+      </div>
+
+      <div class="detail-info">
+
+        <p class="small-title">
+          {{ item.brand }}
+        </p>
+
+        <h1>
+          {{ item.name }}
+        </h1>
+
+        <p class="code">
+          Item Code: {{ item.code }}
+        </p>
+
+        <div class="line"></div>
+
+        <p class="label">
+          PRICE
+        </p>
+
+        <h2>
+          ₱{{ item.unitPrice | number:'1.2-2' }}
+        </h2>
+
+        <p class="description">
+          This item is part of the CLOSET everyday clothing collection.
+        </p>
+
+      </div>
+
+    </div>
+
+  </main>
+
+</div>

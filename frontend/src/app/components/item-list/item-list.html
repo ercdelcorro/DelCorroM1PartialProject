@@ -1,0 +1,77 @@
+<div class="shop-page">
+
+  <nav class="navbar">
+
+    <a routerLink="/" class="logo">
+      CLOSET
+    </a>
+
+    <div class="nav-links">
+      <a routerLink="/">Home</a>
+      <a routerLink="/shop">Shop</a>
+    </div>
+
+  </nav>
+
+  <main class="shop-content">
+
+    <div class="page-heading">
+
+      <p class="small-title">
+        OUR COLLECTION
+      </p>
+
+      <h1>Clothing</h1>
+
+      <p>
+        Browse our simple collection of everyday clothing.
+      </p>
+
+    </div>
+
+    <div class="item-grid">
+
+      <div class="item-card" *ngFor="let item of items">
+
+        <div class="item-image">
+          {{ item.name.charAt(0) }}
+        </div>
+
+        <div class="item-info">
+
+          <p class="item-brand">
+            {{ item.brand }}
+          </p>
+
+          <h2>
+            {{ item.name }}
+          </h2>
+
+          <p class="item-code">
+            {{ item.code }}
+          </p>
+
+          <div class="item-bottom">
+
+            <strong>
+              ₱{{ item.unitPrice | number:'1.2-2' }}
+            </strong>
+
+            <a
+              [routerLink]="['/item', item.code]"
+              class="view-button"
+            >
+              View
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+</div>

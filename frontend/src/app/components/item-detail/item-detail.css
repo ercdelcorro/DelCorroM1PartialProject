@@ -1,0 +1,176 @@
+/* page */
+.detail-page {
+  min-height: 100vh;
+
+  background-color: #f5f5f5;
+}
+
+/* navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 22px 7%;
+
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  color: #222;
+
+  font-size: 20px;
+  font-weight: bold;
+
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #555;
+
+  font-size: 14px;
+
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #000;
+}
+
+/* main content */
+.detail-content {
+  width: 86%;
+  max-width: 950px;
+
+  margin: auto;
+
+  padding: 55px 0;
+}
+
+/* back link */
+.back-link {
+  display: inline-block;
+
+  margin-bottom: 25px;
+
+  color: #555;
+
+  font-size: 14px;
+
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* item detail */
+.detail-card {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  background-color: white;
+
+  border: 1px solid #ddd;
+  border-radius: 8px;
+
+  overflow: hidden;
+}
+
+/* image placeholder */
+.detail-image {
+  min-height: 450px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #e9e9e9;
+
+  font-size: 90px;
+  font-weight: bold;
+
+  color: #555;
+}
+
+/* information */
+.detail-info {
+  padding: 50px;
+}
+
+.small-title {
+  margin: 0 0 10px;
+
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+
+  color: #777;
+}
+
+.detail-info h1 {
+  margin: 0;
+
+  font-size: 36px;
+
+  color: #222;
+}
+
+.code {
+  margin-top: 12px;
+
+  font-size: 13px;
+
+  color: #999;
+}
+
+.line {
+  margin: 30px 0;
+
+  border-top: 1px solid #ddd;
+}
+
+.label {
+  margin: 0 0 5px;
+
+  font-size: 12px;
+  font-weight: bold;
+
+  color: #777;
+}
+
+.detail-info h2 {
+  margin: 0;
+
+  font-size: 28px;
+
+  color: #222;
+}
+
+.description {
+  margin-top: 25px;
+
+  color: #777;
+
+  line-height: 1.6;
+}
+
+/* smaller screens */
+@media (max-width: 800px) {
+
+  .detail-card {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-image {
+    min-height: 300px;
+  }
+
+}
